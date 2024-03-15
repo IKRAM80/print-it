@@ -23,6 +23,14 @@ const right = document.querySelector('.arrow_right');
 let position = 0; 
 const numberOfSlide = slides.length;
 
+left.addEventListener("click", function () {
+    if (position == 0) {
+        position = numberOfSlide - 1;
+    }
+    else {
+        position--;
+    }
+});
 
 
 
