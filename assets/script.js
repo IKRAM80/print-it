@@ -20,6 +20,9 @@ const slides = [
 const left = document.querySelector('.arrow_left');
 const right = document.querySelector('.arrow_right');
 
+let position = 0; 
+const numberOfSlide = slides.length;
+
 
 
 
