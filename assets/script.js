@@ -16,13 +16,6 @@ const slides = [
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ];
-let position = 0; 
-const numberOfSlide = slides.length;
-
-createCaroussel(position);
-createDots();
-updateDot();
-
 
 const left = document.querySelector('.arrow_left');
 const right = document.querySelector('.arrow_right');
@@ -30,13 +23,5 @@ const right = document.querySelector('.arrow_right');
 
 
 
-left.addEventListener("click", function () {
-    if (position == 0) {
-        position = numberOfSlide - 1;
-    }
-    else {
-        position--;
-    }
-        createCaroussel(position);
-});
+
 
