@@ -24,11 +24,21 @@ let position = 0;
 const numberOfSlide = slides.length;
 
 left.addEventListener("click", function () {
+	console.log('test-left');
     if (position == 0) {
         position = numberOfSlide - 1;
     }
     else {
         position--;
+    }
+});
+right.addEventListener("click", function () {
+	console.log('test-right');
+    if (position == 0) {
+        position = numberOfSlide + 1;
+    }
+    else {
+        position++;
     }
 });
 
