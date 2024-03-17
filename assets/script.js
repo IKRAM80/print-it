@@ -19,6 +19,8 @@ const slides = [
 
 const left = document.querySelector('.arrow_left');
 const right = document.querySelector('.arrow_right');
+const dots = document.querySelectorAll('.dot'); //Sélectionnez tous les points 
+
 
 let position = 0; 
 const numberOfSlide = slides.length;
@@ -41,6 +43,16 @@ right.addEventListener("click", function () {
         position++;
     }
 });
+// Fonction pour mettre à jour les points indicateurs
+function updateDots(index) {
+    dots.forEach((dot, i) => {
+        if (i === index) {
+            dot.classList.add('dot_selected'); // Ajoutez la classe pour le point actuel
+        } else {
+            dot.classList.remove('dot_selected'); // Supprimez la classe pour les autres points
+        }
+    });
+}
 
 
 
