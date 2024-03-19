@@ -22,27 +22,7 @@ const right = document.querySelector('.arrow_right');
 const dots = document.querySelectorAll('.dot'); //Sélectionnez tous les points 
 
 
-let position = 0; 
-const numberOfSlide = slides.length;
 
-left.addEventListener("click", function () {
-	console.log('test-left');
-    if (position == 0) {
-        position = numberOfSlide - 1;
-    }
-    else {
-        position--;
-    }
-});
-right.addEventListener("click", function () {
-	console.log('test-right');
-    if (position == 0) {
-        position = numberOfSlide + 1;
-    }
-    else {
-        position++;
-    }
-});
 // Fonction pour mettre à jour les points indicateurs
 function updateDots(index) {
     dots.forEach((dot, i) => {
