@@ -51,9 +51,9 @@ bannerImg.alt = `Slide ${currentIndex + 1}`;
 // Mettre à jour le texte
 const tagLine = slides[currentIndex].tagLine;
 document.querySelector('p').innerHTML = tagLine;
-
 console.log(`Clic sur la flèche ${direction}`);
 }
+
 
 // Gestionnaire d'événement pour le clic sur la flèche gauche
 left.addEventListener('click', function () {
