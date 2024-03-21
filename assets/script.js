@@ -17,10 +17,10 @@ const slides = [
 	}
 ];
 
-const left = document.querySelector('.arrow_left');
-const right = document.querySelector('.arrow_right');
-const dots = document.querySelectorAll('.dot'); //Sélectionnez tous les points 
-const bannerImg = document.querySelector('.banner-img');
+let left = document.querySelector('.arrow_left');
+let right = document.querySelector('.arrow_right');
+let dots = document.querySelectorAll('.dot'); //Sélectionnez tous les points 
+let bannerImg = document.querySelector('.banner-img');
 
 let currentIndex = 0;
 
@@ -45,11 +45,11 @@ function updateCarousel(index, direction) {
       currentIndex = 0;
   }
   // Mettre à jour l'image
-const imagePath = `assets/images/slideshow/${slides[currentIndex].image}`;
+let imagePath = `assets/images/slideshow/${slides[currentIndex].image}`;
 bannerImg.src = imagePath;
 bannerImg.alt = `Slide ${currentIndex + 1}`;
 // Mettre à jour le texte
-const tagLine = slides[currentIndex].tagLine;
+let tagLine = slides[currentIndex].tagLine;
 document.querySelector('p').innerHTML = tagLine;
 console.log(`Clic sur la flèche ${direction}`);
 }
