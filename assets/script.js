@@ -69,6 +69,9 @@ updateCarousel(currentIndex, 'right');
 updateDots(currentIndex); // Mettez à jour les points indicateurs
 });
 
+// Afficher la première diapositive au chargement de la page
+updateCarousel(currentIndex, 'démarrage');
+updateDots(currentIndex); // Mettez à jour les points indicateurs pour la première diapositive
 
 
 
